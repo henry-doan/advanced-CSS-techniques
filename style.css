@@ -22,7 +22,7 @@
 
 @supports (background-blend-mode: multiply){
 	.Wrapper {
-		background-color: tomato;
+		background-color: yellow;
 		background-blend-mode: multiply;
 	}
 
