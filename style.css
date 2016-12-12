@@ -3,18 +3,24 @@ body {
 	font-family: sans-serif;
 	font-size: 22px;
 }
-/*
-any class that is not empty that do this styles*/
-.Alert:not(:empty) {
-	border: 3px solid darkgreen;
-	margin: 1em;
-	padding: 1em;
-	background-color: seagreen;
-	color: white;
-	border-radius: 4px;
+
+article p:first-of-type {
+	font-size: 2rem;
+	font-style: italic;
 }
 
-/*Target the empty div with the same class*/
-/*.Alert:empty {
-	display: none;
-}*/
+article img:last-of-type {
+	border: 10px solid slategray;
+}
+
+blockqoute:only-of-type {
+	border-left: 5px solid slategray;
+	padding-left: 1rem;
+	font-weight: bold;
+	font-style: italic;
+	color: slategray;
+}
+/*takes in a number, args, or combo as a param*/
+article p:nth-of-type(odd){
+	color: maroon;
+}
