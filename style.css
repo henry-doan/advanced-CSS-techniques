@@ -1,23 +1,40 @@
-.Box {
-	background-color: slategray;
-	width: 60vw;
-	height: 40vh;
-	margin: 30vh 20vw 30vh 20vw;
+section {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed
 }
-/*viewport width/height units
-percent of the viewport window no matter the content in it*/
 
-/*to center the margin it is width plus margin = 100%*/
+section:nth-of-type(1){
+	background-image: url('https://unsplash.it/1024/683?image=1068');
+}
+
+section:nth-of-type(2){
+	background-image: url('https://unsplash.it/1024/683?image=1073');
+}
+
+section:nth-of-type(3){
+	background-image: url('https://unsplash.it/1024/683?image=1047');
+}
+
+section:nth-of-type(4){
+	background-image: url('https://unsplash.it/1024/683?image=1032');
+}
 
 body {
 	margin: 0;
+	font-family: monospace;
 }
 
 p {
-	text-align: center;
 	color: white;
 	margin: 0;
-	padding: 2rem 0 2rem 2rem;
-	font-family: monospace;
+	padding: 0 5rem;
 	font-size: 2rem;
+	text-shadow: 1px 1px #333;
 }
