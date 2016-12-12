@@ -1,37 +1,23 @@
-nav {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 5rem;
-	height: 100%;
+.Box {
+	background-color: slategray;
+	width: 60vw;
+	height: 40vh;
+	margin: 30vh 20vw 30vh 20vw;
+}
+/*viewport width/height units
+percent of the viewport window no matter the content in it*/
+
+/*to center the margin it is width plus margin = 100%*/
+
+body {
+	margin: 0;
 }
 
-aside {
-	position: fixed;
-	top: 0;
-	right: 0;
-	height: 100%;
-	width: 20rem;
-}
-/*
-the 25 rem is from the width of the nav and the aside
-this will help with the responsiveness with the fluid*/
-main {
-	margin-left: 5rem;
-	width: calc(100% - 25rem);
-}
-
-@media screen and (max-width: 40em) {
-	nav {
-		width: 3rem;
-	}
-
-	main {
-		margin-left: 3rem;
-		width: calc(100% - 15rem);
-	}
-
-	aside {
-		width: 12rem;
-	}
+p {
+	text-align: center;
+	color: white;
+	margin: 0;
+	padding: 2rem 0 2rem 2rem;
+	font-family: monospace;
+	font-size: 2rem;
 }
