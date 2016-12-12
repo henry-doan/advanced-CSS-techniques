@@ -1,40 +1,24 @@
-section {
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed
-}
-
-section:nth-of-type(1){
-	background-image: url('https://unsplash.it/1024/683?image=1068');
-}
-
-section:nth-of-type(2){
-	background-image: url('https://unsplash.it/1024/683?image=1073');
-}
-
-section:nth-of-type(3){
-	background-image: url('https://unsplash.it/1024/683?image=1047');
-}
-
-section:nth-of-type(4){
-	background-image: url('https://unsplash.it/1024/683?image=1032');
-}
-
 body {
-	margin: 0;
-	font-family: monospace;
+	color: #2E603C;
 }
 
-p {
+button {
+	cursor: pointer;
+	padding: 1.4rem;
+	border: 0;
+	border-radius: 4px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.4rem;
+	font-weight: 500;
 	color: white;
-	margin: 0;
-	padding: 0 5rem;
-	font-size: 2rem;
-	text-shadow: 1px 1px #333;
+	background-color: #3ac569;
+}
+
+/*unset set the value of the parent and if the parent does not have one then it
+goes to its parent and so on. but if the parent is not determeined it goes to
+the browser default.*/
+section button {
+	color: unset;
+	font-size: unset;
 }
