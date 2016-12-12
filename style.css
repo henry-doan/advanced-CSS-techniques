@@ -1,24 +1,44 @@
-body {
-	color: #2E603C;
+.Wrapper {
+	position: relative;
 }
 
-button {
-	cursor: pointer;
-	padding: 1.4rem;
-	border: 0;
-	border-radius: 4px;
-	text-align: center;
-	text-decoration: none;
-	font-size: 1.4rem;
-	font-weight: 500;
+.Wrapper:before {
+	content: ""
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	background-color: tomato;
+	opacity: 0.5;
+}
+
+.Wrapper p {
+	position: relative;
+	z-index: 2;
 	color: white;
-	background-color: #3ac569;
 }
 
-/*unset set the value of the parent and if the parent does not have one then it
-goes to its parent and so on. but if the parent is not determeined it goes to
-the browser default.*/
-section button {
-	color: unset;
-	font-size: unset;
+@supports (background-blend-mode: multiply){
+	.Wrapper {
+		background-color: tomato;
+		background-blend-mode: multiply;
+	}
+
+	.Wrapper:before {
+		display: none;
+	}
+}
+
+.Wrapper {
+	margin: 25vh 15vh;
+	width: 70vw;
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url('https://unsplash.it/1024/680');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
