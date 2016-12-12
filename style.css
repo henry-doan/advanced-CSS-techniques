@@ -1,44 +1,31 @@
-.Wrapper {
-	position: relative;
+* {
+	box-sizing: border-box;
 }
 
-.Wrapper:before {
-	content: ""
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	z-index: 1;
-	background-color: tomato;
-	opacity: 0.5;
+body {
+	background: #eee;
+	font-family: 'Karla', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+section {
+	padding: 0 2rem;
+	margin: 0 auto;
 }
 
-.Wrapper p {
-	position: relative;
-	z-index: 2;
-	color: white;
+li {
+	list-style-type: none
 }
 
-@supports (background-blend-mode: multiply){
-	.Wrapper {
-		background-color: yellow;
-		background-blend-mode: multiply;
-	}
-
-	.Wrapper:before {
-		display: none;
-	}
+nav {
+	/*column-count: 4;
+	column-width: 150px;*/
+	columns: 4 150px;
+	column-gap: 3rem;
+	column-rule: 1px dashed #ccc;
+	column-fill: auto;
 }
 
-.Wrapper {
-	margin: 25vh 15vh;
-	width: 70vw;
-	height: 50vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-image: url('https://unsplash.it/1024/680');
-	background-size: cover;
-	background-repeat: no-repeat;
+h2 {
+	column-span: all;
 }
